@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<property>
+   <address>
+      <address_1>123 Arcadia Street</address_1>
+      <address_2>Little Arbury</address_2>
+      <address_3 />
+      <address_4>Solihull</address_4>
+      <postcode>B12 3AZ</postcode>
+   </address>
+   <branch_id>123</branch_id>
+   <landlord>
+      <first_name>Robert</first_name>
+      <surname>Smith</surname>
+      <title>Mr</title>
+   </landlord>
+   <phone>0121 111 2222</phone>
+   <prpcode>ABC123456</prpcode>
+</property>

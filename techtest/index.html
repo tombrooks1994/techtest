@@ -1,0 +1,89 @@
+<!Doctype html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+
+/*
+Pre-set img settings below
+*/
+
+#main-img {
+
+width:100%;
+height:550px;
+background-repeat:no-repeat;
+
+}
+
+/*
+
+maximum width of 480px, anything above the image will change, 
+I haven't aligned the image in the center of the page due to
+this only being an example of responsive changes.
+
+*/
+
+@media screen and (max-width: 480px) {      
+    #main-img{      
+    	background-image: url('phone.png');
+		background-repeat:no-repeat;
+		height:2000px;
+    } 
+} 
+
+/*
+
+Same as above, tested the image changing and works up to
+719px then will change to the desktop image at 720px where
+the breaking point is required
+
+*/
+
+@media screen and (max-width: 720px) {   
+    #main-img{
+    	background-image: url('tablet.png');
+		background-repeat:no-repeat;
+		height:1050px;
+    } 
+}
+
+/*
+
+Same as above, tested the image changing and it does at 720px
+this is anything on or above that point for the desktop. Again
+not center aligned due to it just being an image change and
+nothing else
+
+*/
+
+@media (min-width: 720px) {      
+      #main-img{        
+          background-image: url('desktop.png');
+		  background-repeat:no-repeat;
+      }
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- 
+
+Used a main container due to using it out of habit 
+then added a main-img divition into it so when the
+screen size changes the image will change. Didn't use
+an image tag because I was not using JavaScript or 
+jQuery to change the image.
+
+-->
+
+<div class="container">
+    <div id="main-img"></div>
+</div>
+
+</body>
+</html>
